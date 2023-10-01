@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="http://Kubsu.ru/">Ссылка на Кубгу</a>
+        </li>
+        <li>
+            <a href="https://Kubsu.ru">https cсылка на Кубгу</a>
+        </li>
+        <li>
+            <a href="#"><img src="image.jpg" width="300" alt="Цветок"></a>
+        </li>
+        <li>
+            <a href="out/outindex.html">Cокращенная ссылка на внутреннюю страницу</a>
+        </li>
+        <li>
+            <a href="index.html">Cокращенная ссылка на главную страницу</a>
+        </li>
+        <li>
+            <a href="#button">Ссылка на фрагмент текущей страницы</a></li>
+        <li>
+            <a href="http://Kubsu.ru?kurs=1&fuk=010302&form=plat">Cсылка с тремя параметрами в URL;</a>
+        </li>
+        <li>
+            <a href="https://example.com/page.html?id=123">Cсылка с параметром id в URL</a>
+        </li>
+        <li>
+            <a href="index_2.html">Относительная на страницу в текущем каталоге</a>
+        </li>
+        <li>
+            <a href="about/about.html">Относительная на страницу в каталоге about</a>
+        </li>
+        <li>
+            <a href="../index"> Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+        </li>
+        <li>
+            <a href="../../index"> Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a>
+        </li>
+        <li>
+            Мир, достоинство и равенство на здоровой планете! <a href="https://www.un.org/ru/"> ООН </a> 
+        </li>
+        <li>
+            <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5#%D0%A1%D0%BB%D0%BE%D0%BD%D1%8B_%D0%BD%D0%B0_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B5">Ссылка в википедии о  слонах на войне</a>
+        </li>
+        <li>
+            <img src="image1.png" width="200" usemap="#square" alt="Square">
+        </li>
+    </ul>
+        <map name="square">
+            <area shape="rect" coords="18,18,178,178" href="#" alt="">
+        </map>
+    <ul>
+        <li>
+            <img src="image2.png" width="200" height="200" usemap="#circle" alt="circle">
+        </li>
+    </ul>
+        <map name="circle">
+            <area shape="circle" coords="100,100,90" href="#" alt="">
+        </map>
+    <ul>
+        <li>
+            <a href="">Пустая ссылка</a>
+        </li>
+        <li>
+            <a>Без href</a>
+        </li>
+        <li>
+            <a href="#" rel="nofolow">Ссылку, по которой запрещен переход поисковикам</a>
+        </li>
+        <li>
+            <a href="#" rel="noindex">Запрещенную для индексации поисковиками</a>
+        </li>
+    </ul>
+    <ol>
+        <li>
+            <a href="#" title="Example">Ссылка</a>
+        </li>
+        <li>
+            <a href="https://google.com" title="Google">Ссылка на Google</a>
+        </li>
+        <li>
+            <a href="https://translate.yandex.ru/" title="Yandex translate">Ссылка на Yandex translate</a>
+        </li>
+    </ol>
+    <ul>
+        <li>
+            <a id="button" href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Скачать файл</a>
+        </li>
+    </ul>
+
+    <input type="text" placeholder="Введите ваше ФИО" >
+    <input type="tel" placeholder="Введите телефон">
+    <input type="email" placeholder="Введите email">
+    <br>
+    <br>
+    <input type="date" value="2023-06-14">
+    <strong>Ваш пол :</strong>
+    <label>
+        <input name="pol" type="radio">Мужчина
+    </label>
+    <label >
+        <input name="pol" type="radio">Женшина
+    </label>
+    <br>
+    <br>
+    <strong>Любимый язык программирования :</strong>
+    <select name="field" multiple="multiple">
+        <option value="one">Pascal</option>
+        <option value="one">C</option>
+        <option value="one">C++</option>
+        <option value="one">JavaScript</option>
+        <option value="one">PHP</option>
+        <option value="one" selected="">Python</option>
+        <option value="one">Java</option>
+        <option value="one">Haskel</option>
+        <option value="one">Clojure</option>
+        <option value="one">Prolog</option>
+        <option value="one">Scala</option>
+    </select>
+    <br>
+    <br>
+    <textarea cols="42" rows="10" placeholder="Напишите в данном поле информацию о себе"></textarea>
+    <br>
+    <label>
+        <input type="checkbox">С контрактом ознакомлен (а)
+    </label>
+    <input type="submit" value="Сохранить">
+</body>
+
+</html>
