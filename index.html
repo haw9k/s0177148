@@ -41,75 +41,49 @@
         </ol>
       </li>
       <li>
-        <a href = "ftp://test:password@amasilov04/box/1.txt">Ссылка на файл на сервере FTP с авторизацией</a>
-      </li>
+            <a id="button" href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Скачать файл</a>
+        </li>
     </ul>
-      
-      <form action="/" method="POST">      
-      <label>
-        ФИО:
+
+    <form>
+        <input type="text" placeholder="Введите ваше ФИО" required>
+        <input type="tel" placeholder="Введите телефон" required>
+        <input type="email" placeholder="Введите email" required>
         <br>
-        <input name="field-name-1" type="text" placeholder="введите ФИО" required >
-      </label>
-      <br>
-
-      <label>
-        Телефон:<br>
-        <input name="field-tel" type="tel" placeholder="Введите ваш номер" required >
-        </label><br>
-
-      <label>
-        email:<br>
-        <input name="field-email" type="email" placeholder="Введите вашу почту" required >
-      </label><br>
-
-      <label>
-        Дата рождения:<br>
-        <input name="field-date" value="2004-12-26" type="date" required >
-      </label><br>
-
-      Пол:<br>
-
-      <label>
-        <input type="radio" checked="checked" name="radio-group-1" value="Значение1" required >
-        Женский
-      </label>
-        <label><input type="radio" name="radio-group-1" value="Значение2" required >
-        Мужской
-      </label><br >
-
+        <br>
+        <input type="date" value="2023-06-14" required>
+        <strong>Ваш пол :</strong>
         <label>
-            Любимый язык программирования:
-            <br>
-            <select name="field-name-4[]"
-              multiple="multiple">
-              <option value="Pascal">Pascal</option>
-              <option value="C">C</option>
-              <option value="C++">C++</option>
-              <option value="JavaScript">JavaScript</option>
-              <option value="PHP">PHP</option>
-              <option value="Python">Python</option>
-              <option value="Java">Java</option>
-              <option value="Haskel">Haskel</option>
-              <option value="Clojure">Clojure</option>
-              <option value="Prolog">Prolog</option>
-              <option value="Scala">Scala</option>
-              
-	    </select>
-          </label><br>
-
-      <label>
-        Биография:<br>
+            <input name="pol" type="radio" required>Мужчина
+        </label>
+        <label>
+            <input name="pol" type="radio" required>Женшина
+        </label>
+        <br>
+        <br>
+        <strong>Любимый язык программирования :</strong>
+        <select name="field" multiple="multiple">
+            <option value="one">Pascal</option>
+            <option value="one">C</option>
+            <option value="one">C++</option>
+            <option value="one">JavaScript</option>
+            <option value="one">PHP</option>
+            <option value="one" selected="">Python</option>
+            <option value="one">Java</option>
+            <option value="one">Haskel</option>
+            <option value="one">Clojure</option>
+            <option value="one">Prolog</option>
+            <option value="one">Scala</option>
+        </select>
+        <br>
+        <br>
         <textarea cols="42" rows="10" placeholder="Напишите в данном поле информацию о себе" required></textarea>
-      </label><br>
-
-      <br>
-      <label id="contact">
-        <input type="checkbox" checked="checked" name="check-1" required >
-        С контрактом ознакомлен (а):
-      </label><br>
-
-      <input type="submit" value="Сохранить" >
-      </form>
+        <br>
+        <label>
+            <input type="checkbox" required>С контрактом ознакомлен (а)
+        </label>
+        <input type="submit" value="Сохранить">
+    </form>
 </body>
+
 </html>
